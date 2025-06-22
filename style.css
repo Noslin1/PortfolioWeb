@@ -420,3 +420,166 @@ button[type="submit"]:hover {
     height: 100px;
   }
 }
+/* ============ RESPONSIVIDADE GERAL ============ */
+
+/* Tablet (768px a 1024px) */
+@media (max-width: 1024px) {
+  header {
+    padding: 12px 15px;
+    height: auto;
+  }
+
+  header nav ul {
+    gap: 20px;
+  }
+
+  section.perfil {
+    padding: 30px 20px;
+    margin: 30px 20px;
+  }
+
+  .tecnologias-container {
+    gap: 20px;
+  }
+
+  .tecnologia-card {
+    width: 75px;
+  }
+
+  section img {
+    max-width: 65%;
+  }
+}
+
+/* Celular Grande (481px a 767px) */
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+    text-align: center;
+  }
+
+  header nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  section.perfil .foto-perfil {
+    width: 140px;
+    height: 140px;
+  }
+
+  .tecnologia-card {
+    width: 70px;
+  }
+
+  .tecnologia-card img {
+    width: 40px;
+    height: 40px;
+  }
+
+  section img {
+    max-width: 75%;
+  }
+
+  form {
+    padding: 0 10px;
+  }
+}
+
+/* Celular Pequeno (até 480px) */
+@media (max-width: 480px) {
+  html {
+    scroll-padding-top: 90px;
+  }
+
+  header {
+    border-radius: 0;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+  }
+
+  section.perfil {
+    margin: 20px 10px;
+    padding: 25px 15px;
+  }
+
+  section.perfil .foto-perfil {
+    width: 120px;
+    height: 120px;
+  }
+
+  section.perfil h1 {
+    font-size: 1.8rem;
+  }
+
+  .tecnologias-container {
+    gap: 12px;
+  }
+
+  .tecnologia-card {
+    width: 60px;
+  }
+
+  .tecnologia-card span {
+    font-size: 0.8rem;
+  }
+
+  section img {
+    max-width: 85%;
+  }
+
+  button, #theme-toggle {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ============ RESPONSIVIDADE DO FORMULÁRIO ============ */
+@media (max-width: 767px) {
+  form {
+    padding: 15px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    padding: 10px;
+  }
+
+  label {
+    font-size: 15px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+/* ============ AJUSTES ESPECÍFICOS ============ */
+@media (max-width: 360px) {
+  header nav ul {
+    gap: 10px;
+  }
+
+  section.perfil .foto-perfil {
+    width: 100px;
+    height: 100px;
+  }
+
+  .tecnologia-card {
+    width: 55px;
+  }
+}
