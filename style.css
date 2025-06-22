@@ -278,3 +278,145 @@ button[type="submit"]:hover {
 .sobre-titulo {
   text-align: center;
 }
+/* ============ RESPONSIVIDADE ============ */
+
+/* Tablet (768px a 1024px) */
+@media (max-width: 1024px) {
+  header {
+    padding: 12px 15px;
+    height: 70px;
+  }
+
+  header nav ul {
+    gap: 20px;
+  }
+
+  main {
+    padding: 0 15px;
+  }
+
+  section.perfil {
+    padding: 30px 15px;
+    margin: 30px auto;
+  }
+
+  .tecnologias-container {
+    gap: 20px;
+  }
+
+  section img {
+    max-width: 60%;
+  }
+}
+
+/* Celular Grande (576px a 768px) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  header nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  section.perfil .foto-perfil {
+    width: 130px;
+    height: 130px;
+  }
+
+  .tecnologia-card {
+    width: 70px;
+  }
+
+  .tecnologia-card img {
+    width: 40px;
+    height: 40px;
+  }
+
+  section img {
+    max-width: 70%;
+  }
+
+  form {
+    max-width: 100%;
+  }
+}
+
+/* Celular Pequeno (até 576px) */
+@media (max-width: 576px) {
+  html {
+    scroll-padding-top: 80px;
+  }
+
+  header {
+    border-radius: 0;
+    position: static;
+  }
+
+  section.perfil {
+    margin: 20px auto;
+    padding: 25px 15px;
+    border-radius: 10px;
+  }
+
+  section.perfil .foto-perfil {
+    width: 120px;
+    height: 120px;
+  }
+
+  section.perfil h1 {
+    font-size: 1.8rem;
+  }
+
+  section.perfil p {
+    font-size: 1rem;
+  }
+
+  .tecnologias-container {
+    gap: 15px;
+  }
+
+  .tecnologia-card {
+    width: 60px;
+    font-size: 0.8rem;
+  }
+
+  .tecnologia-card img {
+    width: 35px;
+    height: 35px;
+  }
+
+  section img {
+    max-width: 80%;
+  }
+
+  button, #theme-toggle {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Ajuste extra para telas muito pequenas */
+@media (max-width: 400px) {
+  header nav ul {
+    gap: 10px;
+  }
+
+  .tecnologias-container {
+    gap: 10px;
+  }
+
+  .tecnologia-card {
+    width: 55px;
+  }
+
+  section.perfil .foto-perfil {
+    width: 100px;
+    height: 100px;
+  }
+}
