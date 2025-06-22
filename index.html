@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+
+  <header>
+    <h1>Meu Portfólio</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle">Trocar Tema</button>
+  </header>
+
+  <main>
+    <section id="inicio" class="perfil">
+      <img src="img/perfil.jpg" alt="Foto de perfil" class="foto-perfil">
+      <h1>Nilson Santos</h1>
+      <p>Desenvolvedor full stack</p>
+    </section>
+
+    <!-- Adicione isso na sua seção "Sobre Mim" -->
+<section id="sobre" class="fade-in">
+  <h2 class="sobre-titulo">Sobre Mim</h2>
+  <div class="sobre-conteudo">
+    <p class="sobre-paragrafo">Sou um desenvolvedor full stack com foco em soluções web e automação de processos.</p>
+     <p>Tenho experiência com:</p>
+    
+    <div class="tecnologias-container">
+      <!-- HTML -->
+      <div class="tecnologia-card" data-tec="HTML">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+        <span>HTML</span>
+      </div>
+      
+      <!-- CSS -->
+      <div class="tecnologia-card" data-tec="CSS">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+        <span>CSS</span>
+      </div>
+      
+      <!-- JavaScript -->
+      <div class="tecnologia-card" data-tec="JavaScript">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+        <span>JavaScript</span>
+      </div>
+      
+      <!-- Python -->
+      <div class="tecnologia-card" data-tec="Python">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        <span>Python</span>
+      </div>
+      
+      <!-- SQL -->
+      <div class="tecnologia-card" data-tec="SQL">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+        <span>SQL</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="projetos" class="fade-in">
+      <h2>Meus Projetos</h2>
+      <div class="projeto-card">
+        <img src="img/projeto1.png" alt="Sistema de endereçamento">
+        <h3>Sistema de endereçamento</h3>
+        <p>Sistema de Cadastro e Endereçamento de Produtos desenvolvido com foco em organização logística.</p>
+      </div>
+      
+      <div class="projeto-card">
+        <img src="img/projeto2.png" alt="Painel de Produtividade">
+        <h3>Painel de Produtividade</h3>
+        <p>Painel interativo desenvolvido no Power BI para visualização de indicadores e acompanhamento de desempenho.</p>
+      </div>
+    </section>
+
+    <section id="contato" class="fade-in">
+      <h2>Contato</h2>
+      <form id="form-contato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
